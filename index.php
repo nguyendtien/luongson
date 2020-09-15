@@ -57,7 +57,7 @@
                                                             <div class="step-right__mobile__img"><img alt="" class="img" src="/themes/wosh_sub/assets/images/dt-buc-tuong.png"></div>
                                                             <h2 class="calculate-paint__step-title mb-0">Diện tích các bức tường</h2>
                                                         </div>
-                                                        <div class="step-list">
+                                                        <div class="step-list buctuong">
                                                             <div class="step-list__item">
                                                                 <div class="step-list__item-row"><label class="active" for="width">Chiều rộng</label><input class="step__num step__num--width" name="width" placeholder="m" type="text"></div>
                                                                 <div class="step-list__item-icon"></div>
@@ -82,7 +82,7 @@
                                                                 <div class="button-see-all step__remove-row"><i class="fa fa-times-circle cl-red" aria-hidden="true"></i><span>Xóa</span></div>
                                                             </div>
                                                         </div>
-                                                        <div class="button-see-all"><i class="fa fa-plus fa-1 cl-red" aria-hidden="true"></i><a href="javascript:void(0)" class="step__add-row">Thêm bức tường</a></div>
+                                                        <div class="button-see-all"><i class="fa fa-plus fa-1 cl-red" aria-hidden="true"></i><a href="javascript:void(0)" class="step__add-row" onclick="append_jquery()">Thêm bức tường</a></div>
                                                         <div class="result-none">
                                                             <div class="total">0</div>
                                                         </div>
@@ -128,12 +128,16 @@
                                                         </div>
                                                         <div class="step-list">
                                                             <div class="step-list__item">
-                                                                <div class="step-list__item-row"><label class="active" for="width">Chiều rộng</label><input class="step__num step__num--width" name="width" placeholder="m" type="text"></div>
+                                                                <div class="step-list__item-row"><label class="active" for="width">Chiều rộng</label>
+                                                                    <input class="step__num step__num--width" name="width" placeholder="m" type="text"></div>
                                                                 <div class="step-list__item-icon"></div>
-                                                                <div class="step-list__item-row"><label class="active" for="width">Chiều cao</label><input class="step__num step__num--height" name="height" placeholder="m" type="text"></div>
+                                                                <div class="step-list__item-row"><label class="active" for="width">Chiều cao</label>
+                                                                    <input class="step__num step__num--height" name="height" placeholder="m" type="text">
+                                                                </div>
                                                             </div>
                                                             <div class="step-list__item">
-                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều rộng</label> <input class="step__num step__num-append step__num--width" name="width" placeholder="m" type="text"></div>
+                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều rộng</label>
+                                                                    <input class="step__num step__num-append step__num--width" name="width" placeholder="m" type="text"></div>
                                                                 <div class="step-list__item-icon"></div>
                                                                 <div class="step-list__item-row"> <label class="active" for="width">Chiều cao</label> <input class="step__num step__num-append step__num--height" name="height" placeholder="m" type="text"></div>
                                                                 <div class="button-see-all step__remove-row"><i class="fa fa-times-circle cl-red" aria-hidden="true"></i><span>Xóa</span></div>
@@ -148,10 +152,15 @@
                                                                 <div class="step-list__item-row"> <label class="active" for="width">Chiều rộng</label> <input class="step__num step__num-append step__num--width" name="width" placeholder="m" type="text"></div>
                                                                 <div class="step-list__item-icon"></div>
                                                                 <div class="step-list__item-row"> <label class="active" for="width">Chiều cao</label> <input class="step__num step__num-append step__num--height" name="height" placeholder="m" type="text"></div>
-                                                                <div class="button-see-all step__remove-row"><i class="fa fa-times-circle cl-red" aria-hidden="true"></i><span>Xóa</span></div>
+                                                                <div class="button-see-all step__remove-row">
+                                                                    <i class="fa fa-times-circle cl-red" aria-hidden="true"></i>
+                                                                    <span>Xóa</span>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="button-see-all"><i class="fa fa-plus fa-1 cl-red" aria-hidden="true"></i><a href="javascript:void(0)" class="step__add-row">Thêm khu vực</a></div>
+                                                        <div class="button-see-all"><i class="fa fa-plus fa-1 cl-red" aria-hidden="true"></i>
+                                                            <a href="javascript:void(0)" class="step__add-row">Thêm khu vực</a>
+                                                        </div>
                                                         <div class="result-none">
                                                             <div class="total">0</div>
                                                         </div>
@@ -228,10 +237,49 @@
     </section>
     <!---End content -->
     </section>
-    <b:section class='navbar' id='navbar' maxwidgets='1' showaddelement='yes' />
+    <!-- nhu nhung JS min  -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
     <script src='https://nipponpaint.com.vn/sites/default/files/js/js_bmFxKayqaq1JeiNZXRptlZUAGMz6pwPiOpBrsXymtMA.js' />
     <script async='async' src='https://static.addtoany.com/menu/page.js'/><script src='https://nipponpaint.com.vn/sites/default/files/js/js_88BcTnye6cOYqLAnVCDBNWwSF--tGTHwof8t-n0V7iY.js'/>
-<script src='https://nipponpaint.com.vn/sites/default/files/js/js_TG1gJBEzNW0XL7FDoP4DuKZg29L0dt_kDO3lop3KNps.js'/>
+    <script src='https://nipponpaint.com.vn/sites/default/files/js/js_TG1gJBEzNW0XL7FDoP4DuKZg29L0dt_kDO3lop3KNps.js'/>
+    <script  type="text/javascript" src="js/myscript.js"></script>
+
+    <script>
+      //them buc tuong
+      $(".step__add-row").on('click',function(){
+        var data="<div class='step-list__item'>";
+            data +="<div class='step-list__item-row'> <label class='active' for='width'>Chiều rộng</label> <input class='step__num step__num-append step__num--width' name='width' placeholder='m' type='text'></div><div class='step-list__item-icon'></div><div class='step-list__item-row'> <label class='active' for='width'>Chiều cao</label> <input class='step__num step__num-append step__num--height' name='height' placeholder='m' type='text'></div><div class='button-see-all step__remove-row'><i class='fa fa-times-circle cl-red' aria-hidden='true'></i><span>Xóa</span></div></div>";
+            $('.buctuong').append(data);
+    });
+      //xoa buc tuong
+      $(".buctuong").on('click','.step__remove-row',function(){
+        var inx = $('.step__remove-row').index(this);
+        $('.step-list__item').eq(inx+1).remove();
+    });
+    </script>
+
+
 </body>
 <!--Kết thúc phần hiển thị trên trang-->
 </html>
+
+
+
+<!-- ============================================= -->
+<!-- <?php 
+    $a = 1;
+    if($a == 1){
+?>
+   <div class="bot-paint-color hidden">asddfsf</div>
+<?php }else{ ?>
+    <div>a bang 0</div>
+<?php } ?>
+
+<?php 
+    for($i = 0; $i < 10; $i++) {
+        var_dump($i);
+        print_r($i);
+?>
+    <div class="giatri__<?php echo $i?>"><?php echo $i; ?></div>
+<?php } ?> -->
