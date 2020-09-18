@@ -59,9 +59,9 @@
                                                         </div>
                                                         <div class="step-list buctuong">
                                                             <div class="step-list__item">
-                                                                <div class="step-list__item-row"><label class="active" for="width">Chiều rộng</label><input class="step__num step__num--width" name="width" placeholder="m" type="text"></div>
+                                                                <div class="step-list__item-row"><label class="active" for="width">Chiều rộng</label><input id="step__num--width" class="step__num step__num--width" name="width" placeholder="m" type="text"></div>
                                                                 <div class="step-list__item-icon"></div>
-                                                                <div class="step-list__item-row"><label class="active" for="width">Chiều cao</label><input class="step__num step__num--height" name="height" placeholder="m" type="text"></div>
+                                                                <div class="step-list__item-row"><label class="active" for="width">Chiều cao</label><input id="step__num--height" class="step__num step__num--height" name="height" placeholder="m" type="text"></div>
                                                             </div>
                                                             <div class="step-list__item">
                                                                 <div class="step-list__item-row"> <label class="active" for="width">Chiều rộng</label> <input class="step__num step__num-append step__num--width" name="width" placeholder="m" type="text"></div>
@@ -212,7 +212,8 @@
                                         </div>
                                         <ul class="calculate-paint__btn">
                                             <li class="item">
-                                                <div class="item__inner-result"><a href="javascript:void(0)" class="pa-btn with-img result not-allow"><img src="/themes/wosh_sub/assets/images/tai-lieu-ky-thuat-white.png" alt="ket qua" class="img">Kết quả</a></div>
+                                                <!-- class này trong thẻ a not-allow -->
+                                                <div class="item__inner-result"><a href="javascript:void(0)" class="pa-btn with-img result" onclick="dientich()"><img src="/themes/wosh_sub/assets/images/tai-lieu-ky-thuat-white.png" alt="ket qua" class="img">Kết quả</a></div>
                                                 <div class="item__inner-reset"><a href="javascript:void(0)" class="pa-btn with-img reset"><img src="/themes/wosh_sub/assets/images/dat-lai-white.png" alt="ket qua" class="img">Đặt lại</a></div>
                                             </li>
                                             <li class="item"><a href="http://nipponpaint.com.vn/vi/son-noi-that" class="pa-btn with-bg tim-dai-ly">Tìm sản phẩm</a></li>
@@ -258,28 +259,29 @@
         $('.step-list__item').eq(inx+1).remove();
     });
     </script>
+    <!-- <script>
+        function dientich(){
+         var chieurong = document.getElementById("step__num--width").value;
+         var chieucao = document.getElementById("step__num--height").value;
+         //tinh dien tich
+         var dientich = Number(chieurong) * Number(chieucao);
+         alert("Diện tích là: " + dientich);
+        }
+    </script> -->
 
+    <script>
+        function dientich(){
+            var n = $('.step-list__item').lenght;
+            for (var i = 0; i < n; i++) {
+                var chieurong = document.getElementById("step__num--width[i]").value;
+                var chieucao = document.getElementById("step__num--height[i]").value;
+                var dientich = Number(chieurong) * Number(chieucao);
+                var tongdientich += dientich;
+                alert("Diện tích là: " + tongdientich);
+            }
+        }
+    </script>
 
 </body>
 <!--Kết thúc phần hiển thị trên trang-->
 </html>
-
-
-
-<!-- ============================================= -->
-<!-- <?php 
-    $a = 1;
-    if($a == 1){
-?>
-   <div class="bot-paint-color hidden">asddfsf</div>
-<?php }else{ ?>
-    <div>a bang 0</div>
-<?php } ?>
-
-<?php 
-    for($i = 0; $i < 10; $i++) {
-        var_dump($i);
-        print_r($i);
-?>
-    <div class="giatri__<?php echo $i?>"><?php echo $i; ?></div>
-<?php } ?> -->
