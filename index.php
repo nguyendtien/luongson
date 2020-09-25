@@ -250,7 +250,7 @@
       //them buc tuong
       $(".step__add-row").on('click',function(){
         var data="<div class='step-list__item'>";
-            data +="<div class='step-list__item-row'> <label class='active' for='width'>Chiều rộng</label> <input class='step__num step__num-append step__num--width' name='width' placeholder='m' type='text'></div><div class='step-list__item-icon'></div><div class='step-list__item-row'> <label class='active' for='width'>Chiều cao</label> <input class='step__num step__num-append step__num--height' name='height' placeholder='m' type='text'></div><div class='button-see-all step__remove-row'><i class='fa fa-times-circle cl-red' aria-hidden='true'></i><span>Xóa</span></div></div>";
+            data +="<div class='step-list__item-row'> <label class='active' for='width'>Chiều rộng</label> <input class='step__num step__num-append step__num--width' name='widthbt' placeholder='m' type='text'></div><div class='step-list__item-icon'></div><div class='step-list__item-row'> <label class='active' for='width'>Chiều cao</label> <input class='step__num step__num-append step__num--height' name='heightbt' placeholder='m' type='text'></div><div class='button-see-all step__remove-row'><i class='fa fa-times-circle cl-red' aria-hidden='true'></i><span>Xóa</span></div></div>";
             $('.buctuong').append(data);
     });
       //xoa buc tuong
