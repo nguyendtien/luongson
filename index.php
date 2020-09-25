@@ -59,26 +59,26 @@
                                                         </div>
                                                         <div class="step-list buctuong">
                                                             <div class="step-list__item">
-                                                                <div class="step-list__item-row"><label class="active" for="width">Chiều rộng</label><input id="step__num--width" class="step__num step__num--width" name="width" placeholder="m" type="text"></div>
+                                                                <div class="step-list__item-row"><label class="active" for="width">Chiều rộng</label><input id="step__num--width" class="step__num step__num--width" name="widthbt" placeholder="m" type="text"></div>
                                                                 <div class="step-list__item-icon"></div>
-                                                                <div class="step-list__item-row"><label class="active" for="width">Chiều cao</label><input id="step__num--height" class="step__num step__num--height" name="height" placeholder="m" type="text"></div>
+                                                                <div class="step-list__item-row"><label class="active" for="width">Chiều cao</label><input id="step__num--height" class="step__num step__num--height" name="heightbt" placeholder="m" type="text"></div>
                                                             </div>
                                                             <div class="step-list__item">
-                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều rộng</label> <input class="step__num step__num-append step__num--width" name="width" placeholder="m" type="text"></div>
+                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều rộng</label> <input class="step__num step__num-append step__num--width" name="widthbt" placeholder="m" type="text"></div>
                                                                 <div class="step-list__item-icon"></div>
-                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều cao</label> <input class="step__num step__num-append step__num--height" name="height" placeholder="m" type="text"></div>
+                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều cao</label> <input class="step__num step__num-append step__num--height" name="heightbt" placeholder="m" type="text"></div>
                                                                 <div class="button-see-all step__remove-row"><i class="fa fa-times-circle cl-red" aria-hidden="true"></i><span>Xóa</span></div>
                                                             </div>
                                                             <div class="step-list__item">
-                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều rộng</label> <input class="step__num step__num-append step__num--width" name="width" placeholder="m" type="text"></div>
+                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều rộng</label> <input class="step__num step__num-append step__num--width" name="widthbt" placeholder="m" type="text"></div>
                                                                 <div class="step-list__item-icon"></div>
-                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều cao</label> <input class="step__num step__num-append step__num--height" name="height" placeholder="m" type="text"></div>
+                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều cao</label> <input class="step__num step__num-append step__num--height" name="heightbt" placeholder="m" type="text"></div>
                                                                 <div class="button-see-all step__remove-row"><i class="fa fa-times-circle cl-red" aria-hidden="true"></i><span>Xóa</span></div>
                                                             </div>
                                                             <div class="step-list__item">
-                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều rộng</label> <input class="step__num step__num-append step__num--width" name="width" placeholder="m" type="text"></div>
+                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều rộng</label> <input class="step__num step__num-append step__num--width" name="widthbt" placeholder="m" type="text"></div>
                                                                 <div class="step-list__item-icon"></div>
-                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều cao</label> <input class="step__num step__num-append step__num--height" name="height" placeholder="m" type="text"></div>
+                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều cao</label> <input class="step__num step__num-append step__num--height" name="heightbt" placeholder="m" type="text"></div>
                                                                 <div class="button-see-all step__remove-row"><i class="fa fa-times-circle cl-red" aria-hidden="true"></i><span>Xóa</span></div>
                                                             </div>
                                                         </div>
@@ -258,28 +258,114 @@
         var inx = $('.step__remove-row').index(this);
         $('.step-list__item').eq(inx+1).remove();
     });
-    </script>
-    <!-- <script>
-        function dientich(){
-         var chieurong = document.getElementById("step__num--width").value;
-         var chieucao = document.getElementById("step__num--height").value;
-         //tinh dien tich
-         var dientich = Number(chieurong) * Number(chieucao);
-         alert("Diện tích là: " + dientich);
-        }
-    </script> -->
 
-    <script>
-        function dientich(){
-            var n = $('.step-list__item').lenght;
-            for (var i = 0; i < n; i++) {
-                var chieurong = document.getElementById("step__num--width[i]").value;
-                var chieucao = document.getElementById("step__num--height[i]").value;
-                var dientich = Number(chieurong) * Number(chieucao);
-                var tongdientich += dientich;
-                alert("Diện tích là: " + tongdientich);
+    function dientich(){
+    //     var tdt = 0;
+    //     jQuery('.buctuong .step-list__item').each(function(){
+    //         var chieurong = jQuery('.step__num--width').val();
+    //         var chieucao = jQuery('.step__num--height').val();
+    //         var dt = chieucao * chieurong;
+    //         var tdt = tdt + dt;
+    //         console.log(chieurong);
+    //         console.log(chieucao);
+    //     })
+            // jQuery('.buctuong .step__num--height').each(function(){
+            //      var chieucao = jQuery(this).val();
+            //      console.log(chieucao);
+            // })
+
+
+
+            // var taskArraywidth = new Array(); 
+            // $("input[name=widthbt]").each(function() { 
+            //     taskArraywidth.push($(this).val()); 
+            // });
+            // console.log(taskArraywidth);
+            // console.log(taskArraywidth.length);
+            // var taskArrayheight = new Array(); 
+            // $("input[name=heightbt]").each(function() { 
+            //     taskArrayheight.push($(this).val()); 
+            // });
+            // console.log(taskArrayheight);
+            // console.log(taskArrayheight.length);
+            // var dt=0;
+            // var tdt=0;
+            // for (var a = 1; a < taskArraywidth.length; a++) {
+            //     for (var b = 1; b < taskArrayheight.length; b++) {
+            //         dt = taskArraywidth[a] * taskArrayheight[b];
+                    
+            //     }
+            //     tdt += dt;
+            // }
+            // console.log(tdt);
+
+
+
+            var taskArraywidth = new Array(); 
+            $("input[name=widthbt]").each(function() { 
+                taskArraywidth.push($(this).val()); 
+            });
+            console.log(taskArraywidth);
+            console.log(taskArraywidth.length);
+            var taskArrayheight = new Array(); 
+            $("input[name=heightbt]").each(function() { 
+                taskArrayheight.push($(this).val()); 
+            });
+            console.log(taskArrayheight);
+            console.log(taskArrayheight.length);
+            var arr = new Array();
+            var dt=0;
+            var tdt=0;
+            var j=0;
+            for (var a = 0; a < taskArraywidth.length; a++) {
+                for (var b = 0; b < taskArrayheight.length; b++) {
+                    arr[j] = taskArraywidth[a] * taskArrayheight[a];
+                    
+                }
+                j++;
             }
-        }
+            console.log(arr);
+            for (var i = 0; i < arr.length; i++) {
+                tdt += arr[i];
+            }
+            console.log(tdt);
+
+
+
+        // var mangcr = new Array();
+        // var mangcc = new Array();
+        // jQuery('.buctuong .step__num--width').each(function(){
+        //      mangcr = jQuery(this).val();
+
+        //      console.log(mangcr);
+             
+        // })
+        // console.log(mangcr);
+        // console.log(mangcr.length);
+        // jQuery('.buctuong .step__num--height').each(function(){
+        //      mangcc = jQuery(this).val();
+
+        //      console.log(mangcc);
+             
+        // })
+        // console.log(mangcc);
+        // console.log(mangcc.length);
+
+
+        // for (var a = 0; a < mangcr.length; a++) {
+        //     for (var b = 0; b < mangcc.length; b++) {
+        //         var result = new Array();
+        //         result[] =
+        //     }
+        // }
+        // jQuery('.buctuong .step__num--height').each(function(){
+        //      var chieucao = jQuery(this).val();
+        //      console.log(chieucao);
+        // })
+        // var tongdientich = 0;
+        // tongdientich = chieurong * chieucao;
+        // console.log(tongdientich);
+    }
     </script>
 
 </body>
