@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Ujjwal Technical Tips</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+</head>
+
+<body>
+
+<div id="Div1">Div 1áđâsd</div>
+<div id="Div2" style="display: none">Div 11111111112</div>
+
+<input id="Button1" type="button" value="Click" onclick="switchVisible();"/>
+  <script type="text/javascript">
+ 
+function switchVisible() {
+            if (document.getElementById('Div1')) {
+
+                if (document.getElementById('Div1').style.display == 'none') {
+                    document.getElementById('Div1').style.display = 'block';
+                    document.getElementById('Div2').style.display = 'none';
+                }
+                else {
+                    document.getElementById('Div1').style.display = 'none';
+                    document.getElementById('Div2').style.display = 'block';
+                }
+            }
+}
+ 
+ </script>
+
+</body>
+
+</html>

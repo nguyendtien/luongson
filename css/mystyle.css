@@ -36714,7 +36714,7 @@ li {
 .calculate-paint__btn .webform-flex--1 .webform-confirmation__back>a.lien-he:before,
 .store-locator__list-btn .calculate-paint__btn .item a.lien-he:before,
 .store-locator__list-btn .calculate-paint__btn .webform-flex--1 a.lien-he:before {
-    background: url(/themes/wosh_sub/assets/css/../images/tim-dai-ly-red.png) 50% 50% no-repeat;
+    background: url(../img/tim-dai-ly-red.png) 50% 50% no-repeat;
     width: 17px;
     height: 23px
 }
@@ -36727,7 +36727,7 @@ li {
 .calculate-paint__btn .webform-flex--1 .webform-confirmation__back>a.tim-dai-ly:before,
 .store-locator__list-btn .calculate-paint__btn .item a.tim-dai-ly:before,
 .store-locator__list-btn .calculate-paint__btn .webform-flex--1 a.tim-dai-ly:before {
-    background: url(/themes/wosh_sub/assets/css/../images/cay-son-red.png) 50% 50% no-repeat;
+    background: url(../img/cay-son-red.png) 50% 50% no-repeat;
     width: 23px;
     height: 23px
 }
@@ -36847,7 +36847,7 @@ li {
 .calculate-paint__btn .webform-flex--1 .webform-confirmation__back>a:hover.tim-dai-ly:before,
 .store-locator__list-btn .calculate-paint__btn .item a:hover.tim-dai-ly:before,
 .store-locator__list-btn .calculate-paint__btn .webform-flex--1 a:hover.tim-dai-ly:before {
-    background: url(/themes/wosh_sub/assets/css/../images/cay-son-white.png) 50% 50% no-repeat
+    background: url(../img/cay-son-white.png) 50% 50% no-repeat
 }
 
 .calculate-paint__btn .item .pa-btn:hover.lien-he:before,
@@ -36858,7 +36858,7 @@ li {
 .calculate-paint__btn .webform-flex--1 .webform-confirmation__back>a:hover.lien-he:before,
 .store-locator__list-btn .calculate-paint__btn .item a:hover.lien-he:before,
 .store-locator__list-btn .calculate-paint__btn .webform-flex--1 a:hover.lien-he:before {
-    background: url(/themes/wosh_sub/assets/css/../images/tim-dai-ly.png) 50% 50% no-repeat
+    background: url(../img/tim-dai-ly.png) 50% 50% no-repeat
 }
 
 @media (min-width:1400px) {

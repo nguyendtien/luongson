@@ -42,7 +42,7 @@
                                 </div>
                                 <div class="calculate-paint">
                                     <div class="calculate-paint__inner">
-                                        <div class="calculate-paint__field">
+                                        <div class="calculate-paint__field" id="calculate-paint__field">
                                             <div class="calculate-paint__warning"><span class="cl-red averta-600">Chú ý:</span>Sử dụng dấu "." để phân biệt hàng thập phân</div>
                                             <div class="nofitication-alert warning-dot">
                                                 <div class="nofitication-alert__inner"><i class="fa fa-bell-o" aria-hidden="true"></i>
@@ -51,7 +51,7 @@
                                             </div>
                                             <div class="calculate-paint__step">
                                                 <div class="calculate-paint__step__one step-inner">
-                                                    <div class="step-left"><img alt="" class="img" src="/themes/wosh_sub/assets/images/dt-buc-tuong.png"></div>
+                                                    <div class="step-left"><img alt="" class="img" src="img/dt-buc-tuong.png"></div>
                                                     <div class="step-right">
                                                         <div class="step-right__mobile">
                                                             <div class="step-right__mobile__img"><img alt="" class="img" src="/themes/wosh_sub/assets/images/dt-buc-tuong.png"></div>
@@ -67,22 +67,22 @@
                                                                 <div class="step-list__item-row"> <label class="active" for="width">Chiều rộng</label> <input class="step__num step__num-append step__num--width" name="widthbt" placeholder="m" type="text"></div>
                                                                 <div class="step-list__item-icon"></div>
                                                                 <div class="step-list__item-row"> <label class="active" for="width">Chiều cao</label> <input class="step__num step__num-append step__num--height" name="heightbt" placeholder="m" type="text"></div>
-                                                                <div class="button-see-all step__remove-row"><i class="fa fa-times-circle cl-red" aria-hidden="true"></i><span>Xóa</span></div>
+                                                                <div class="button-see-all step__remove-rowbt"><i class="fa fa-times-circle cl-red" aria-hidden="true"></i><span>Xóa</span></div>
                                                             </div>
                                                             <div class="step-list__item">
                                                                 <div class="step-list__item-row"> <label class="active" for="width">Chiều rộng</label> <input class="step__num step__num-append step__num--width" name="widthbt" placeholder="m" type="text"></div>
                                                                 <div class="step-list__item-icon"></div>
                                                                 <div class="step-list__item-row"> <label class="active" for="width">Chiều cao</label> <input class="step__num step__num-append step__num--height" name="heightbt" placeholder="m" type="text"></div>
-                                                                <div class="button-see-all step__remove-row"><i class="fa fa-times-circle cl-red" aria-hidden="true"></i><span>Xóa</span></div>
+                                                                <div class="button-see-all step__remove-rowbt"><i class="fa fa-times-circle cl-red" aria-hidden="true"></i><span>Xóa</span></div>
                                                             </div>
                                                             <div class="step-list__item">
                                                                 <div class="step-list__item-row"> <label class="active" for="width">Chiều rộng</label> <input class="step__num step__num-append step__num--width" name="widthbt" placeholder="m" type="text"></div>
                                                                 <div class="step-list__item-icon"></div>
                                                                 <div class="step-list__item-row"> <label class="active" for="width">Chiều cao</label> <input class="step__num step__num-append step__num--height" name="heightbt" placeholder="m" type="text"></div>
-                                                                <div class="button-see-all step__remove-row"><i class="fa fa-times-circle cl-red" aria-hidden="true"></i><span>Xóa</span></div>
+                                                                <div class="button-see-all step__remove-rowbt"><i class="fa fa-times-circle cl-red" aria-hidden="true"></i><span>Xóa</span></div>
                                                             </div>
                                                         </div>
-                                                        <div class="button-see-all"><i class="fa fa-plus fa-1 cl-red" aria-hidden="true"></i><a href="javascript:void(0)" class="step__add-row" onclick="append_jquery()">Thêm bức tường</a></div>
+                                                        <div class="button-see-all"><i class="fa fa-plus fa-1 cl-red" aria-hidden="true"></i><a href="javascript:void(0)" class="step__add-rowbt" onclick="append_jquery()">Thêm bức tường</a></div>
                                                         <div class="result-none">
                                                             <div class="total">0</div>
                                                         </div>
@@ -91,7 +91,7 @@
                                             </div>
                                             <div class="calculate-paint__step">
                                                 <div class="calculate-paint__step__two step-inner">
-                                                    <div class="step-left"><img alt="" class="img" src="/themes/wosh_sub/assets/images/dt-tran-nha.png"></div>
+                                                    <div class="step-left"><img alt="" class="img" src="img/dt-tran-nha.png"></div>
                                                     <div class="step-right">
                                                         <div class="step-right__mobile">
                                                             <div class="step-right__mobile__img"><img alt="" class="img" src="/themes/wosh_sub/assets/images/dt-tran-nha.png"></div>
@@ -100,9 +100,9 @@
                                                         <p class="note">*Diện tích trần nhà tương đương diện tích sàn</p>
                                                         <div class="step-list">
                                                             <div class="step-list__item">
-                                                                <div class="step-list__item-row"><label class="active" for="width">Chiều rộng</label><input class="step__num step__num--width" name="width" placeholder="m" type="text"></div>
+                                                                <div class="step-list__item-row"><label class="active" for="width">Chiều rộng</label><input class="step__num step__num--width" name="widthtn" placeholder="m" type="text"></div>
                                                                 <div class="step-list__item-icon"></div>
-                                                                <div class="step-list__item-row"><label class="active" for="width">Chiều dài</label><input class="step__num step__num--width1" name="height" placeholder="m" type="text"></div>
+                                                                <div class="step-list__item-row"><label class="active" for="width">Chiều dài</label><input class="step__num step__num--width1" name="heighttn" placeholder="m" type="text"></div>
                                                             </div>
                                                         </div>
                                                         <div class="result-none">
@@ -115,7 +115,7 @@
                                             </div>
                                             <div class="calculate-paint__step">
                                                 <div class="calculate-paint__step__three step-inner">
-                                                    <div class="step-left"><img alt="" class="img" src="/themes/wosh_sub/assets/images/dt-khong-son.png"></div>
+                                                    <div class="step-left"><img alt="" class="img" src="img/dt-khong-son.png"></div>
                                                     <div class="step-right">
                                                         <div class="step-right__mobile">
                                                             <div class="step-right__mobile__img"><img alt="" class="img" src="/themes/wosh_sub/assets/images/dt-khong-son.png"></div>
@@ -126,40 +126,40 @@
                                                                 <div class="text">Diện tích không sơn phải nhỏ hơn diện tích các bức tường</div>
                                                             </div>
                                                         </div>
-                                                        <div class="step-list">
-                                                            <div class="step-list__item">
+                                                        <div class="step-list khongson">
+                                                            <div class="step-list__item step-list__itemks">
                                                                 <div class="step-list__item-row"><label class="active" for="width">Chiều rộng</label>
-                                                                    <input class="step__num step__num--width" name="width" placeholder="m" type="text"></div>
+                                                                    <input class="step__num step__num--width" name="widthks" placeholder="m" type="text"></div>
                                                                 <div class="step-list__item-icon"></div>
                                                                 <div class="step-list__item-row"><label class="active" for="width">Chiều cao</label>
-                                                                    <input class="step__num step__num--height" name="height" placeholder="m" type="text">
+                                                                    <input class="step__num step__num--height" name="heightks" placeholder="m" type="text">
                                                                 </div>
                                                             </div>
-                                                            <div class="step-list__item">
+                                                            <div class="step-list__item step-list__itemks">
                                                                 <div class="step-list__item-row"> <label class="active" for="width">Chiều rộng</label>
-                                                                    <input class="step__num step__num-append step__num--width" name="width" placeholder="m" type="text"></div>
+                                                                    <input class="step__num step__num-append step__num--width" name="widthks" placeholder="m" type="text"></div>
                                                                 <div class="step-list__item-icon"></div>
-                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều cao</label> <input class="step__num step__num-append step__num--height" name="height" placeholder="m" type="text"></div>
-                                                                <div class="button-see-all step__remove-row"><i class="fa fa-times-circle cl-red" aria-hidden="true"></i><span>Xóa</span></div>
+                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều cao</label> <input class="step__num step__num-append step__num--height" name="heightks" placeholder="m" type="text"></div>
+                                                                <div class="button-see-all step__remove-rowks"><i class="fa fa-times-circle cl-red" aria-hidden="true"></i><span>Xóa</span></div>
                                                             </div>
-                                                            <div class="step-list__item">
-                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều rộng</label> <input class="step__num step__num-append step__num--width" name="width" placeholder="m" type="text"></div>
+                                                            <div class="step-list__item step-list__itemks">
+                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều rộng</label> <input class="step__num step__num-append step__num--width" name="widthks" placeholder="m" type="text"></div>
                                                                 <div class="step-list__item-icon"></div>
-                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều cao</label> <input class="step__num step__num-append step__num--height" name="height" placeholder="m" type="text"></div>
-                                                                <div class="button-see-all step__remove-row"><i class="fa fa-times-circle cl-red" aria-hidden="true"></i><span>Xóa</span></div>
+                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều cao</label> <input class="step__num step__num-append step__num--height" name="heightks" placeholder="m" type="text"></div>
+                                                                <div class="button-see-all step__remove-rowks"><i class="fa fa-times-circle cl-red" aria-hidden="true"></i><span>Xóa</span></div>
                                                             </div>
-                                                            <div class="step-list__item">
-                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều rộng</label> <input class="step__num step__num-append step__num--width" name="width" placeholder="m" type="text"></div>
+                                                            <div class="step-list__item step-list__itemks">
+                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều rộng</label> <input class="step__num step__num-append step__num--width" name="widthks" placeholder="m" type="text"></div>
                                                                 <div class="step-list__item-icon"></div>
-                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều cao</label> <input class="step__num step__num-append step__num--height" name="height" placeholder="m" type="text"></div>
-                                                                <div class="button-see-all step__remove-row">
+                                                                <div class="step-list__item-row"> <label class="active" for="width">Chiều cao</label> <input class="step__num step__num-append step__num--height" name="heightks" placeholder="m" type="text"></div>
+                                                                <div class="button-see-all step__remove-rowks">
                                                                     <i class="fa fa-times-circle cl-red" aria-hidden="true"></i>
                                                                     <span>Xóa</span>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="button-see-all"><i class="fa fa-plus fa-1 cl-red" aria-hidden="true"></i>
-                                                            <a href="javascript:void(0)" class="step__add-row">Thêm khu vực</a>
+                                                            <a href="javascript:void(0)" class="step__add-rowks" onclick="append_jquery()">Thêm khu vực</a>
                                                         </div>
                                                         <div class="result-none">
                                                             <div class="total">0</div>
@@ -168,7 +168,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="calculate-paint__result">
+                                        <div class="calculate-paint__result" id="calculate-paint__result">
                                             <div class="calculate-paint__result-inner">
                                                 <div class="item-inner">
                                                     <div class="calculate-paint__result-block wall">
@@ -176,15 +176,15 @@
                                                         <ul class="calculate-paint__result-block__list">
                                                             <li class="item">
                                                                 <div class="item-text">Diện tích</div>
-                                                                <div class="total-text"><span class="total">0</span>m<sup>2</sup></div>
+                                                                <div class="total-text"><span class="total" id="totaltuongcs">0</span>m<sup>2</sup></div>
                                                             </li>
                                                             <li class="item">
                                                                 <div class="item-text">Lượng sơn lót (Áp dụng cho 1 lớp)</div>
-                                                                <div class="total-text"><span class="paint-wall-one">0</span>lít</div>
+                                                                <div class="total-text"><span class="paint-wall-one" id="paint-wall-one">0</span>lít</div>
                                                             </li>
                                                             <li class="item">
                                                                 <div class="item-text">Lượng sơn phủ (Áp dụng cho 2 lớp)</div>
-                                                                <div class="total-text"><span class="paint-wall-two">0</span>lít</div>
+                                                                <div class="total-text"><span class="paint-wall-two" id="paint-wall-two">0</span>lít</div>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -195,15 +195,15 @@
                                                         <ul class="calculate-paint__result-block__list">
                                                             <li class="item">
                                                                 <div class="item-text">Diện tích</div>
-                                                                <div class="total-text"><span class="total">0</span>m<sup>2</sup></div>
+                                                                <div class="total-text"><span class="total" id="totaltrancs">0</span>m<sup>2</sup></div>
                                                             </li>
                                                             <li class="item">
                                                                 <div class="item-text">Lượng sơn lót (Áp dụng cho 1 lớp)</div>
-                                                                <div class="total-text"><span class="paint-ceiling-one">0</span>lít</div>
+                                                                <div class="total-text"><span class="paint-ceiling-one" id="paint-ceiling-one">0</span>lít</div>
                                                             </li>
                                                             <li class="item">
                                                                 <div class="item-text">Lượng sơn phủ (Áp dụng cho 2 lớp)</div>
-                                                                <div class="total-text"><span class="paint-ceiling-two">0</span>lít</div>
+                                                                <div class="total-text"><span class="paint-ceiling-two" id="paint-ceiling-two">0</span>lít</div>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -213,8 +213,8 @@
                                         <ul class="calculate-paint__btn">
                                             <li class="item">
                                                 <!-- class này trong thẻ a not-allow -->
-                                                <div class="item__inner-result"><a href="javascript:void(0)" class="pa-btn with-img result" onclick="dientich()"><img src="/themes/wosh_sub/assets/images/tai-lieu-ky-thuat-white.png" alt="ket qua" class="img">Kết quả</a></div>
-                                                <div class="item__inner-reset"><a href="javascript:void(0)" class="pa-btn with-img reset"><img src="/themes/wosh_sub/assets/images/dat-lai-white.png" alt="ket qua" class="img">Đặt lại</a></div>
+                                                <div class="item__inner-result"><a href="javascript:void(0)" class="pa-btn with-img result" onclick="dientich()"><img src="img/tai-lieu-ky-thuat-white.png" alt="ket qua" class="img">Kết quả</a></div>
+                                                <div class="item__inner-reset"><a href="javascript:void(0)" class="pa-btn with-img reset"><img src="img/dat-lai-white.png" alt="ket qua" class="img">Đặt lại</a></div>
                                             </li>
                                             <li class="item"><a href="http://nipponpaint.com.vn/vi/son-noi-that" class="pa-btn with-bg tim-dai-ly">Tìm sản phẩm</a></li>
                                             <li class="item"><a href="http://nipponpaint.com.vn/vi/dai-ly" class="pa-btn with-bg lien-he">Liên hệ đại lý</a></li>
@@ -247,125 +247,154 @@
     <script  type="text/javascript" src="js/myscript.js"></script>
 
     <script>
+
+      //validateNUM
+    $('.step__num').bind('keydown',function(e){
+        if ((e.which < 48 || e.which > 57) && e.which != 190 && e.which != 8)
+            return false;
+        return true;
+    })
+
       //them buc tuong
-      $(".step__add-row").on('click',function(){
+      $(".step__add-rowbt").on('click',function(){
         var data="<div class='step-list__item'>";
-            data +="<div class='step-list__item-row'> <label class='active' for='width'>Chiều rộng</label> <input class='step__num step__num-append step__num--width' name='widthbt' placeholder='m' type='text'></div><div class='step-list__item-icon'></div><div class='step-list__item-row'> <label class='active' for='width'>Chiều cao</label> <input class='step__num step__num-append step__num--height' name='heightbt' placeholder='m' type='text'></div><div class='button-see-all step__remove-row'><i class='fa fa-times-circle cl-red' aria-hidden='true'></i><span>Xóa</span></div></div>";
+            data +="<div class='step-list__item-row'> <label class='active' for='width'>Chiều rộng</label> <input class='step__num step__num-append step__num--width' name='widthbt' placeholder='m' type='text'></div><div class='step-list__item-icon'></div><div class='step-list__item-row'> <label class='active' for='width'>Chiều cao</label> <input class='step__num step__num-append step__num--height' name='heightbt' placeholder='m' type='text'></div><div class='button-see-all step__remove-rowbt'><i class='fa fa-times-circle cl-red' aria-hidden='true'></i><span>Xóa</span></div></div>";
             $('.buctuong').append(data);
     });
       //xoa buc tuong
-      $(".buctuong").on('click','.step__remove-row',function(){
-        var inx = $('.step__remove-row').index(this);
+      $(".buctuong").on('click','.step__remove-rowbt',function(){
+        var inx = $('.step__remove-rowbt').index(this);
         $('.step-list__item').eq(inx+1).remove();
     });
 
+    //them khong son
+      $(".step__add-rowks").on('click',function(){
+        var data="<div class='step-list__item step-list__itemks'>";
+            data +="<div class='step-list__item-row'> <label class='active' for='width'>Chiều rộng</label> <input class='step__num step__num-append step__num--width' name='widthks' placeholder='m' type='text'></div><div class='step-list__item-icon'></div><div class='step-list__item-row'> <label class='active' for='width'>Chiều cao</label> <input class='step__num step__num-append step__num--height' name='heightks' placeholder='m' type='text'></div><div class='button-see-all step__remove-rowks'><i class='fa fa-times-circle cl-red' aria-hidden='true'></i><span>Xóa</span></div></div>";
+            $('.khongson').append(data);
+    });
+      //xoa khong son
+      $(".khongson").on('click','.step__remove-rowks',function(){
+        var inx = $('.step__remove-rowks').index(this);
+        $('.step-list__itemks').eq(inx+1).remove();
+    });
+
     function dientich(){
-    //     var tdt = 0;
-    //     jQuery('.buctuong .step-list__item').each(function(){
-    //         var chieurong = jQuery('.step__num--width').val();
-    //         var chieucao = jQuery('.step__num--height').val();
-    //         var dt = chieucao * chieurong;
-    //         var tdt = tdt + dt;
-    //         console.log(chieurong);
-    //         console.log(chieucao);
-    //     })
-            // jQuery('.buctuong .step__num--height').each(function(){
-            //      var chieucao = jQuery(this).val();
-            //      console.log(chieucao);
-            // })
-
-
-
-            // var taskArraywidth = new Array(); 
-            // $("input[name=widthbt]").each(function() { 
-            //     taskArraywidth.push($(this).val()); 
-            // });
-            // console.log(taskArraywidth);
-            // console.log(taskArraywidth.length);
-            // var taskArrayheight = new Array(); 
-            // $("input[name=heightbt]").each(function() { 
-            //     taskArrayheight.push($(this).val()); 
-            // });
-            // console.log(taskArrayheight);
-            // console.log(taskArrayheight.length);
-            // var dt=0;
-            // var tdt=0;
-            // for (var a = 1; a < taskArraywidth.length; a++) {
-            //     for (var b = 1; b < taskArrayheight.length; b++) {
-            //         dt = taskArraywidth[a] * taskArrayheight[b];
-                    
-            //     }
-            //     tdt += dt;
-            // }
-            // console.log(tdt);
-
-
-
-            var taskArraywidth = new Array(); 
+        //dien tich buc tuong
+            var taskArraywidthbt = new Array(); 
             $("input[name=widthbt]").each(function() { 
-                taskArraywidth.push($(this).val()); 
+                taskArraywidthbt.push($(this).val()); 
             });
-            console.log(taskArraywidth);
-            console.log(taskArraywidth.length);
-            var taskArrayheight = new Array(); 
+            console.log(taskArraywidthbt);
+            console.log(taskArraywidthbt.length);
+            var taskArrayheightbt = new Array(); 
             $("input[name=heightbt]").each(function() { 
-                taskArrayheight.push($(this).val()); 
+                taskArrayheightbt.push($(this).val()); 
             });
-            console.log(taskArrayheight);
-            console.log(taskArrayheight.length);
+            console.log(taskArrayheightbt);
+            console.log(taskArrayheightbt.length);
             var arr = new Array();
-            var dt=0;
-            var tdt=0;
+            var tdtbt=0;
             var j=0;
-            for (var a = 0; a < taskArraywidth.length; a++) {
-                for (var b = 0; b < taskArrayheight.length; b++) {
-                    arr[j] = taskArraywidth[a] * taskArrayheight[a];
+            for (var a = 0; a < taskArraywidthbt.length; a++) {
+                for (var b = 0; b < taskArrayheightbt.length; b++) {
+                    arr[j] = taskArraywidthbt[a] * taskArrayheightbt[a];
                     
                 }
                 j++;
             }
             console.log(arr);
             for (var i = 0; i < arr.length; i++) {
-                tdt += arr[i];
+                tdtbt += arr[i];
             }
-            console.log(tdt);
+            console.log(tdtbt);
+
+        //dien tich khong son
+            var taskArraywidthks = new Array(); 
+            $("input[name=widthks]").each(function() { 
+                taskArraywidthks.push($(this).val()); 
+            });
+            console.log(taskArraywidthks);
+            console.log(taskArraywidthks.length);
+            var taskArrayheightks = new Array(); 
+            $("input[name=heightks]").each(function() { 
+                taskArrayheightks.push($(this).val()); 
+            });
+            console.log(taskArrayheightks);
+            console.log(taskArrayheightks.length);
+            var arr1 = new Array();
+            var tdtks=0;
+            var j=0;
+            for (var a = 0; a < taskArraywidthks.length; a++) {
+                for (var b = 0; b < taskArrayheightks.length; b++) {
+                    arr1[j] = taskArraywidthks[a] * taskArrayheightks[a];
+                    
+                }
+                j++;
+            }
+            console.log(arr1);
+            for (var i = 0; i < arr1.length; i++) {
+                tdtks += arr1[i];
+            }
+            console.log(tdtks);
+
+        //dien tich can son
+            if (tdtbt > tdtks) {
+                var tdtcs = tdtbt-tdtks;
+                console.log(tdtcs);    
+            }else {
+                console.log("nhap lai di!");
+            }
+            
+        //dien tich tran nha
+            var taskArraywidthtn = new Array();
+            $("input[name=widthtn]").each(function() {
+            taskArraywidthtn.push($(this).val());
+            });
+            console.log(taskArraywidthtn);
+            var taskArrayheighttn = new Array();
+            $("input[name=heighttn]").each(function() {
+            taskArrayheighttn.push($(this).val());
+            });
+            console.log(taskArrayheighttn);
+            var tdttn = taskArraywidthtn * taskArrayheighttn;
+            console.log(tdttn);
 
 
+            document.getElementById('totaltuongcs').innerHTML = tdtcs;
+            document.getElementById('totaltrancs').innerHTML = tdttn;
 
-        // var mangcr = new Array();
-        // var mangcc = new Array();
-        // jQuery('.buctuong .step__num--width').each(function(){
-        //      mangcr = jQuery(this).val();
+            const MyConst = 0.1;
+            var pwo = tdtcs * MyConst;
+            pwo = pwo.toFixed(2);
+            var pwt = tdtcs * MyConst * 2;
+            pwt = pwt.toFixed(2);
+            document.getElementById('paint-wall-one').innerHTML = pwo;
+            document.getElementById('paint-wall-two').innerHTML = pwt;
+            var pco = tdttn * MyConst;
+            pco = pco.toFixed(2);
+            var pct = tdttn * MyConst * 2;
+            pct = pct.toFixed(2);
+            document.getElementById('paint-ceiling-one').innerHTML = pco;
+            document.getElementById('paint-ceiling-two').innerHTML = pct;
 
-        //      console.log(mangcr);
-             
-        // })
-        // console.log(mangcr);
-        // console.log(mangcr.length);
-        // jQuery('.buctuong .step__num--height').each(function(){
-        //      mangcc = jQuery(this).val();
+            //click show/hide
+            if (document.getElementById('calculate-paint__field')) {
 
-        //      console.log(mangcc);
-             
-        // })
-        // console.log(mangcc);
-        // console.log(mangcc.length);
+                if (document.getElementById('calculate-paint__field').style.display == 'none') {
+                    document.getElementById('calculate-paint__field').style.display = 'block';
+                    document.getElementById('calculate-paint__result').style.display = 'none';
+                }
+                else {
+                    document.getElementById('calculate-paint__field').style.display = 'none';
+                    document.getElementById('calculate-paint__result').style.display = 'block';
+                }
+            }
 
-
-        // for (var a = 0; a < mangcr.length; a++) {
-        //     for (var b = 0; b < mangcc.length; b++) {
-        //         var result = new Array();
-        //         result[] =
-        //     }
-        // }
-        // jQuery('.buctuong .step__num--height').each(function(){
-        //      var chieucao = jQuery(this).val();
-        //      console.log(chieucao);
-        // })
-        // var tongdientich = 0;
-        // tongdientich = chieurong * chieucao;
-        // console.log(tongdientich);
     }
+
+    
+
     </script>
 
 </body>
