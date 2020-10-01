@@ -121,7 +121,7 @@
                                                             <div class="step-right__mobile__img"><img alt="" class="img" src="/themes/wosh_sub/assets/images/dt-khong-son.png"></div>
                                                             <h2 class="calculate-paint__step-title mb-0">Trừ diện tích không sơn (Cửa sổ, cửa chính...)</h2>
                                                         </div>
-                                                        <div class="nofitication-alert warning-area">
+                                                        <div class="nofitication-alert warning-area" id="nofitication-alert warning-area">
                                                             <div class="nofitication-alert__inner"><i class="fa fa-bell-o" aria-hidden="true"></i>
                                                                 <div class="text">Diện tích không sơn phải nhỏ hơn diện tích các bức tường</div>
                                                             </div>
@@ -216,8 +216,8 @@
                                                 <div class="item__inner-result"><a href="javascript:void(0)" class="pa-btn with-img result" onclick="dientich()"><img src="img/tai-lieu-ky-thuat-white.png" alt="ket qua" class="img">Kết quả</a></div>
                                                 <div class="item__inner-reset"><a href="javascript:void(0)" class="pa-btn with-img reset"><img src="img/dat-lai-white.png" alt="ket qua" class="img">Đặt lại</a></div>
                                             </li>
-                                            <li class="item"><a href="http://nipponpaint.com.vn/vi/son-noi-that" class="pa-btn with-bg tim-dai-ly">Tìm sản phẩm</a></li>
-                                            <li class="item"><a href="http://nipponpaint.com.vn/vi/dai-ly" class="pa-btn with-bg lien-he">Liên hệ đại lý</a></li>
+                                            <li class="item"><a href="#" class="pa-btn with-bg tim-dai-ly">Tìm sản phẩm</a></li>
+                                            <li class="item"><a href="#" class="pa-btn with-bg lien-he">Liên hệ đại lý</a></li>
                                         </ul>
                                         <div class="wating-result">
                                             <div class="snipper-loading">
@@ -247,14 +247,12 @@
     <script  type="text/javascript" src="js/myscript.js"></script>
 
     <script>
-
       //validateNUM
     $('.step__num').bind('keydown',function(e){
         if ((e.which < 48 || e.which > 57) && e.which != 190 && e.which != 8)
             return false;
         return true;
     })
-
       //them buc tuong
       $(".step__add-rowbt").on('click',function(){
         var data="<div class='step-list__item'>";
@@ -266,7 +264,6 @@
         var inx = $('.step__remove-rowbt').index(this);
         $('.step-list__item').eq(inx+1).remove();
     });
-
     //them khong son
       $(".step__add-rowks").on('click',function(){
         var data="<div class='step-list__item step-list__itemks'>";
@@ -278,7 +275,6 @@
         var inx = $('.step__remove-rowks').index(this);
         $('.step-list__itemks').eq(inx+1).remove();
     });
-
     function dientich(){
         //dien tich buc tuong
             var taskArraywidthbt = new Array(); 
@@ -298,8 +294,7 @@
             var j=0;
             for (var a = 0; a < taskArraywidthbt.length; a++) {
                 for (var b = 0; b < taskArrayheightbt.length; b++) {
-                    arr[j] = taskArraywidthbt[a] * taskArrayheightbt[a];
-                    
+                    arr[j] = taskArraywidthbt[a] * taskArrayheightbt[a];  
                 }
                 j++;
             }
@@ -308,7 +303,6 @@
                 tdtbt += arr[i];
             }
             console.log(tdtbt);
-
         //dien tich khong son
             var taskArraywidthks = new Array(); 
             $("input[name=widthks]").each(function() { 
@@ -328,7 +322,6 @@
             for (var a = 0; a < taskArraywidthks.length; a++) {
                 for (var b = 0; b < taskArrayheightks.length; b++) {
                     arr1[j] = taskArraywidthks[a] * taskArrayheightks[a];
-                    
                 }
                 j++;
             }
@@ -337,15 +330,6 @@
                 tdtks += arr1[i];
             }
             console.log(tdtks);
-
-        //dien tich can son
-            if (tdtbt > tdtks) {
-                var tdtcs = tdtbt-tdtks;
-                console.log(tdtcs);    
-            }else {
-                console.log("nhap lai di!");
-            }
-            
         //dien tich tran nha
             var taskArraywidthtn = new Array();
             $("input[name=widthtn]").each(function() {
@@ -359,42 +343,54 @@
             console.log(taskArrayheighttn);
             var tdttn = taskArraywidthtn * taskArrayheighttn;
             console.log(tdttn);
+            //dien tich can son
+            if (tdtbt > tdtks) {
+                //click show/hide
+                if (document.getElementById('calculate-paint__field')) {
 
+                    if (document.getElementById('calculate-paint__field').style.display == 'none') {
+                        document.getElementById('calculate-paint__field').style.display = 'block';
+                        document.getElementById('calculate-paint__result').style.display = 'none';
+                    }
+                    else {
+                        document.getElementById('calculate-paint__field').style.display = 'none';
+                        document.getElementById('calculate-paint__result').style.display = 'block';
+                    }
+                }
+                var tdtcs = tdtbt-tdtks;
+                console.log(tdtcs);
+                document.getElementById('totaltuongcs').innerHTML = tdtcs;
+                document.getElementById('totaltrancs').innerHTML = tdttn;
+                const MyConst = 0.1;
+                var pwo = tdtcs * MyConst;
+                pwo = pwo.toFixed(2);
+                var pwt = tdtcs * MyConst * 2;
+                pwt = pwt.toFixed(2);
+                document.getElementById('paint-wall-one').innerHTML = pwo;
+                document.getElementById('paint-wall-two').innerHTML = pwt;
+                var pco = tdttn * MyConst;
+                pco = pco.toFixed(2);
+                var pct = tdttn * MyConst * 2;
+                pct = pct.toFixed(2);
+                document.getElementById('paint-ceiling-one').innerHTML = pco;
+                document.getElementById('paint-ceiling-two').innerHTML = pct;
+            }else {
+                //thong bao nhap sai
+                alert("Diện tích không sơn phải nhỏ hơn diện tích các bức tường");
+            }
+            //show/hide button
+            if (document.getElementById('item__inner-result')) {
 
-            document.getElementById('totaltuongcs').innerHTML = tdtcs;
-            document.getElementById('totaltrancs').innerHTML = tdttn;
-
-            const MyConst = 0.1;
-            var pwo = tdtcs * MyConst;
-            pwo = pwo.toFixed(2);
-            var pwt = tdtcs * MyConst * 2;
-            pwt = pwt.toFixed(2);
-            document.getElementById('paint-wall-one').innerHTML = pwo;
-            document.getElementById('paint-wall-two').innerHTML = pwt;
-            var pco = tdttn * MyConst;
-            pco = pco.toFixed(2);
-            var pct = tdttn * MyConst * 2;
-            pct = pct.toFixed(2);
-            document.getElementById('paint-ceiling-one').innerHTML = pco;
-            document.getElementById('paint-ceiling-two').innerHTML = pct;
-
-            //click show/hide
-            if (document.getElementById('calculate-paint__field')) {
-
-                if (document.getElementById('calculate-paint__field').style.display == 'none') {
-                    document.getElementById('calculate-paint__field').style.display = 'block';
-                    document.getElementById('calculate-paint__result').style.display = 'none';
+                if (document.getElementById('item__inner-result').style.display == 'none') {
+                    document.getElementById('item__inner-result').style.display = 'block';
+                    document.getElementById('item__inner-reset').style.display = 'none';
                 }
                 else {
-                    document.getElementById('calculate-paint__field').style.display = 'none';
-                    document.getElementById('calculate-paint__result').style.display = 'block';
+                    document.getElementById('item__inner-result').style.display = 'none';
+                    document.getElementById('item__inner-reset').style.display = 'block';
                 }
             }
-
     }
-
-    
-
     </script>
 
 </body>
