@@ -214,7 +214,7 @@
                                             <li class="item">
                                                 <!-- class này trong thẻ a not-allow -->
                                                 <div class="item__inner-result"><a href="javascript:void(0)" class="pa-btn with-img result" onclick="dientich()"><img src="img/tai-lieu-ky-thuat-white.png" alt="ket qua" class="img">Kết quả</a></div>
-                                                <div class="item__inner-reset"><a href="javascript:void(0)" class="pa-btn with-img reset"><img src="img/dat-lai-white.png" alt="ket qua" class="img">Đặt lại</a></div>
+                                                <div class="item__inner-reset"><a href="javascript:void(0)" class="pa-btn with-img reset" onclick="reset()"><img src="img/dat-lai-white.png" alt="ket qua" class="img">Đặt lại</a></div>
                                             </li>
                                             <li class="item"><a href="#" class="pa-btn with-bg tim-dai-ly">Tìm sản phẩm</a></li>
                                             <li class="item"><a href="#" class="pa-btn with-bg lien-he">Liên hệ đại lý</a></li>
@@ -275,6 +275,22 @@
         var inx = $('.step__remove-rowks').index(this);
         $('.step-list__itemks').eq(inx+1).remove();
     });
+      function reset() {
+          $(".reset").removeClass("show");
+          $(".result").removeClass("close");
+          if (document.getElementById('calculate-paint__field')) {
+
+                    if (document.getElementById('calculate-paint__field').style.display == 'none') {
+                        document.getElementById('calculate-paint__field').style.display = 'block';
+                        document.getElementById('calculate-paint__result').style.display = 'none';
+                    }
+                    else {
+                        document.getElementById('calculate-paint__field').style.display = 'none';
+                        document.getElementById('calculate-paint__result').style.display = 'block';
+                    }
+                }
+            $('.step__num').val("");
+        }
     function dientich(){
         //dien tich buc tuong
             var taskArraywidthbt = new Array(); 
@@ -361,34 +377,26 @@
                 console.log(tdtcs);
                 document.getElementById('totaltuongcs').innerHTML = tdtcs;
                 document.getElementById('totaltrancs').innerHTML = tdttn;
-                const MyConst = 0.1;
-                var pwo = tdtcs * MyConst;
+                //hang so cua son
+                const MyConstlot = 0.1;
+                const MyConstphu = 0.2;
+                var pwo = tdtcs * MyConstlot;
                 pwo = pwo.toFixed(2);
-                var pwt = tdtcs * MyConst * 2;
+                var pwt = tdtcs * MyConstphu;
                 pwt = pwt.toFixed(2);
                 document.getElementById('paint-wall-one').innerHTML = pwo;
                 document.getElementById('paint-wall-two').innerHTML = pwt;
-                var pco = tdttn * MyConst;
+                var pco = tdttn * MyConstlot;
                 pco = pco.toFixed(2);
-                var pct = tdttn * MyConst * 2;
+                var pct = tdttn * MyConstphu;
                 pct = pct.toFixed(2);
                 document.getElementById('paint-ceiling-one').innerHTML = pco;
                 document.getElementById('paint-ceiling-two').innerHTML = pct;
+                jQuery('.result').addClass('close');
+                jQuery('.reset').addClass('show');
             }else {
                 //thong bao nhap sai
-                alert("Diện tích không sơn phải nhỏ hơn diện tích các bức tường");
-            }
-            //show/hide button
-            if (document.getElementById('item__inner-result')) {
-
-                if (document.getElementById('item__inner-result').style.display == 'none') {
-                    document.getElementById('item__inner-result').style.display = 'block';
-                    document.getElementById('item__inner-reset').style.display = 'none';
-                }
-                else {
-                    document.getElementById('item__inner-result').style.display = 'none';
-                    document.getElementById('item__inner-reset').style.display = 'block';
-                }
+                jQuery('.nofitication-alert').addClass('show');
             }
     }
     </script>
